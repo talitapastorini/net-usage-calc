@@ -51,7 +51,7 @@ export function Calculator() {
                     <Input
                       {...field}
                       type="number"
-                      className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
+                      className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-red-500 focus:ring focus:ring-red-200"
                     />
                   )}
                 </FormFieldWrapper>
@@ -59,7 +59,7 @@ export function Calculator() {
             </div>
 
             {!!total && (
-              <div className="flex justify-center text-purple-700 font-bold text-lg border-2 border-purple-500 rounded-lg p-2">
+              <div className="flex justify-center text-red-700 font-bold text-lg rounded-lg p-2">
                 <p>
                   {total}{" "}
                   <span className="text-base text-gray-400 font-normal">
@@ -75,13 +75,13 @@ export function Calculator() {
                     reset({ days: 0, price: 0 });
                     setTotal("");
                   }}
-                  className={`bg-transparent border-2 border-purple-500 text-purple-600 px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 hover:bg-purple-100 hover:text-purple-700 transition-colors duration-300`}
+                  className={`bg-transparent border-2 border-red-500 text-red-600 px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-200 hover:bg-red-100 hover:text-red-700 transition-colors duration-300`}
                 >
                   Limpar
                 </Button>
               )}
               <Button
-                className={`bg-gradient-to-r from-blue-500 to-purple-700 font-bold text-white px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 hover:from-blue-600 hover:to-purple-800`}
+                className={`bg-gradient-to-r from-yellow-500 to-yellow-600 font-bold text-white px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 hover:from-yellow-600 hover:to-yellow-800`}
                 type="submit"
               >
                 Calcular
